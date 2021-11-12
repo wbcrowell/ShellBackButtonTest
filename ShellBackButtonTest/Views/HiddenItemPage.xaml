@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShellBackButtonTest.Views.HiddenItemPage"
+             Title="New Item"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+        <StackLayout Spacing="3" Padding="15">
+            <Label Text="Click the back arrow above. Because this item is inside an invisible portion of shell, the back button, and navigation like Shell.GoToAsync(), do NOT work correctly." FontSize="Medium"></Label>
+            <Label Text="NOTE: This works correctly in Xamarin Forms 4." FontSize="Medium"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
